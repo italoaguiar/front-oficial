@@ -1,0 +1,55 @@
+﻿<div class="container content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar rounded">
+                <a href="javascript:loadPage('home.html')">
+                    <div class="sidebarBtn">
+                        <i class="fa fa-home"></i>
+                        <p>Painel</p>
+                    </div>
+                </a>
+                <hr />
+                <a [routerLink]="['entidades']">
+                    <div class="sidebarBtn">
+                        <i class="fa fa-university"></i>
+                        <p>Entidades</p>
+                    </div>
+                </a>
+                <hr />
+                <a href="/Admin/Categorias">
+                    <div class="sidebarBtn">
+                        <i class="fa fa-heart"></i>
+                        <p>Necessidades</p>
+                    </div>
+                </a>
+                <hr />
+                <a href="/Admin/Relatorios">
+                    <div class="sidebarBtn">
+                        <i class="fa fa-map-marker"></i>
+                        <p>Contribua</p>
+                    </div>
+                </a>
+                <hr />
+                <a href="/Admin/Config">
+                    <div class="sidebarBtn">
+                        <i class="fa fa-cog"></i>
+                        <p>Configurações</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rounded page-content" id="content" style="padding:20px;">
+
+                        <router-outlet></router-outlet>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

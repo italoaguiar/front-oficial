@@ -1,9 +1,11 @@
 import {ModuleWithProviders}  from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import { CadastroComponent } from './cadastro.component';
+import { DashboardComponent } from './dashboard.component';
+import {EntidadesComponent } from './entidades/entidades.component';
 
 const routes: Routes = [
-    {path: '', component: CadastroComponent},
+    { path: '', component: DashboardComponent },
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);

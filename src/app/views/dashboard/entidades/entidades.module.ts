@@ -1,18 +1,18 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
-import { routing } from './cadastro.routing';
-import { CadastroComponent } from './cadastro.component';
+import { routing } from './entidades.routing';
+import { EntidadesComponent } from './entidades.component';
 
 @NgModule({
   imports: [ CommonModule, routing ],
 
   providers: [],
 
-  declarations: [CadastroComponent],
+  declarations: [EntidadesComponent],
 
   exports: []
 })
 
-export class CadastroModule {
+export class EntidadesModule {
 
 }
